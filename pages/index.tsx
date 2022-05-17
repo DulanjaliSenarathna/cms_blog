@@ -19,7 +19,7 @@ import {getPosts} from '../services'
       
         <div className="lg:col-span-4 col-span-1">
           <div className="lg:sticky relative top-8">
-            <PostWidget/>
+            <PostWidget categories={undefined} slug={undefined}/>
             <Categories/>
           </div>
   	    </div>
@@ -27,7 +27,7 @@ import {getPosts} from '../services'
     
     </div>
   )
-}
+  }
 
 export async function getStaticProps() {
   const posts = ( await getPosts()) || [];
