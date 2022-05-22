@@ -29,9 +29,9 @@ console.log(relatedPosts)
             <div className="w-16 flex-none">
               <img
                alt={post.title}
-              height="60px" 
-              width="60px"
-              className="align-middle rounded-full"
+              height="100px" 
+              width="100px"
+              className="align-middle rounded-xl"
               src={post.featuredImage.url}
               />
             </div>
